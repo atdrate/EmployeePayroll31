@@ -18,7 +18,7 @@ insert into employee_payroll values
 ('Shraddha',20000.20,'22-09-2015'),
 ('Puja',12000.33,'19-11-2013'),
 ('Mrunal',22500.200,'13-05-2019'),
-('Shreya',36123,'29-02-2020')
+('Shreya',36123,'29-02-2020'),
 
 -----UC4 Retrive Data into Table---------
 select * from Employee_payroll 
@@ -27,3 +27,8 @@ select * from Employee_payroll
 select Salary from Employee_payroll where Name= 'Puja'
 select Salary,Name from Employee_payroll where StartDate between ('20-04-2019') and ('25-04-2016')
 select Salary from Employee_payroll where Id=4
+
+-------UC6 Add one row Name as Gender in the table-----
+ALTER TABLE Employee_payroll ADD gender varchar(20)
+UPDATE Employee_payroll set Gender = 'F' where Name= 'Riya' or Name = 'Shraddha' or name='puja' or Name= 'Shreya'
+UPDATE Employee_payroll set Gender = 'M' where Name= 'Mrunal' 
