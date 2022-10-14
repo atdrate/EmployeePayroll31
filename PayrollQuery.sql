@@ -20,3 +20,5 @@ insert into employee_payroll values
 ('Mrunal',22500.200,'13-05-2019'),
 ('Shreya',36123,'29-02-2020')
 
+-----UC4 Retrive Data into Table---------
+select * from Employee_payroll 
